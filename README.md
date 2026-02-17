@@ -71,12 +71,12 @@ This project is configured for easy deployment on **Render** using Docker.
 
 1.  **Push to GitHub**: Ensure your latest code is on the `main` branch.
 2.  **Create Web Service on Render**:
-    *   Connect your GitHub repository.
-    *   Select **Docker** as the Runtime.
-    *   Region: Singapore (Recommended).
-3.  **Environment Variables**:
-    *   `PORT`: 8080 (Optional, app defaults to this).
-4.  **Deploy**: Render will automatically build via the `Dockerfile` and start the server.
+    *   **New +** > **Web Service**.
+    *   Connect your GitHub repository: `atharvashinde57/RehabCneter`.
+    *   **Runtime**: Select **Docker** (Critical Step).
+    *   **Region**: Singapore (Recommended).
+3.  **Deploy**: Render will automatically build via the `Dockerfile` and start the server.
+    *   *Note*: The `Dockerfile` includes workaround scripts to handle "start" or "run" commands if you accidentally leave them in settings.
 
 ---
 
