@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head th:fragment="head">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title th:text="${title} + ' | Sanchit Rehab'">Sanchit Rehab</title>
+    <meta name="description" content="Leading government-approved Nasha Mukti Kendra in Gwalior.">
+    <link rel="stylesheet" th:href="@{/assets/css/style.css}">
+    <!-- Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- NAVBAR FRAGMENT -->
+    <div th:fragment="navbar">
+
+
+        <!-- MAIN NAVBAR -->
+        <nav id="navbar">
+            <a class="nav-logo" th:href="@{/}"><span>Sanchit</span> Rehab</a>
+            <ul class="nav-links">
+                <li><a th:href="@{/}" class="nav-item">Home</a></li>
+                <li><a th:href="@{/about}" class="nav-item">About Us</a></li>
+                <li class="dropdown-item"> <!-- Added class for css targeting -->
+                    <a th:href="@{/services}" class="nav-item">Our Services ▾</a>
+                    <div class="dropdown-menu">
+                        <a th:href="@{/services/alcohol}">Alcohol Addiction Treatment in Gwalior</a>
+                        <a th:href="@{/services/drug}">Drug Addiction Treatment in Gwalior</a>
+                        <a th:href="@{/services/nicotine}">Nicotine Addiction Treatment in Gwalior</a>
+                        <a th:href="@{/services/cannabis}">Cannabis Addiction Treatment in Gwalior</a>
+                        <a th:href="@{/services/opioids}">Opioids Addiction Treatment in Gwalior</a>
+                        <a th:href="@{/services/gambling}">Gambling Addiction Treatment in Gwalior</a>
+                    </div>
+                </li>
+                <li><a th:href="@{/gallery}" class="nav-item">Gallery</a></li>
+                <li><a th:href="@{/contact}" class="nav-item">Contact</a></li>
+                <li><a href="tel:+919755352136" class="nav-cta">Helper Line: +91 97553 52136</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span><span></span><span></span>
+            </div>
+        </nav>
+    </div>
+
+    <!-- FOOTER FRAGMENT -->
+    <footer th:fragment="footer">
+        <div class="footer-top">
+            <div class="footer-brand">
+                <a class="nav-logo" th:href="@{/}"><span>Sanchit</span> Rehab</a>
+                <p>Sanchit Rehab is Gwalior's leading center for addiction recovery. Government approved and dedicated
+                    to your wellness.</p>
+
+                <!-- QR CODE SECTION -->
+                <div class="qr-container" style="margin-top: 20px;">
+                    <p style="font-size: 0.8rem; margin-bottom: 5px; color: rgba(255,255,255,0.6);">Scan to Chat</p>
+                    <img id="whatsapp-qr" th:src="@{/assets/images/whatsapp.png}" alt="WhatsApp QR"
+                        style="width: 100px; height: 100px; border-radius: 10px; cursor: pointer; transition: transform 0.3s; background: white; padding: 5px;"
+                        onclick="toggleZoom(this)" ondblclick="window.location.href='https://wa.me/919755352136'">
+                </div>
+            </div>
+            <div class="footer-col">
+                <h5>Programs</h5>
+                <ul>
+                    <li><a th:href="@{/services}">Alcohol Rehab</a></li>
+                    <li><a th:href="@{/services}">Drug De-addiction</a></li>
+                    <li><a th:href="@{/services}">Mental Health</a></li>
+                    <li><a th:href="@{/services}">Family Therapy</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h5>Quick Links</h5>
+                <ul>
+                    <li><a href="#verify">Verify Insurance</a></li>
+                    <li><a href="#careers">Careers</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h5>Contact</h5>
+                <ul>
+                    <li><a href="tel:+919755352136">+91 97553 52136</a></li>
+                    <li><a href="mailto:info@sanchitrehab.com">info@sanchitrehab.com</a></li>
+                    <li><a th:href="@{/contact}">Gwalior, Madhya Pradesh, India</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <span>&copy; 2026 Sanchit Rehab. All rights reserved.</span>
+        </div>
+
+        <script>
+            // QR Zoom Logic
+            function toggleZoom(img) {
+                if (img.style.transform === "scale(3)") {
+                    img.style.transform = "scale(1)";
+                    img.style.position = "static";
+                    img.style.zIndex = "0";
+                } else {
+                    img.style.transform = "scale(3)";
+                    img.style.position = "relative";
+                    img.style.zIndex = "1000";
+                }
+            }
+        </script>
+    </footer>
+
+</body>
+
+</html>

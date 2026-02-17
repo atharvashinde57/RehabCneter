@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head th:replace="~{fragments :: head}"></head>
+
+<body>
+
+    <nav th:replace="~{fragments :: navbar}"></nav>
+
+    <section class="hero" style="min-height: 50vh; background: var(--cream);">
+        <div class="hero-left" style="width: 100%; padding-top: 8rem;">
+            <div class="hero-eyebrow">Our Gallery</div>
+            <h1 class="hero-title">Life at <br><em>Sanchit Rehab</em></h1>
+        </div>
+    </section>
+
+    <section class="approach" style="padding-top: 4rem; padding-bottom: 4rem;">
+        <div class="section-label" style="text-align: center; width: 100%;">Photo Tour</div>
+        <h2 class="section-title" style="text-align: center; margin-bottom: 3rem;">Glimpses of <br><em>Recovery</em>
+        </h2>
+
+        <div class="programs-grid"
+            style="grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 1.5rem; padding: 0 2rem;">
+
+            <!-- Existing Gallery Images -->
+            <div class="approach-card" style="height: 250px; overflow: hidden; border-radius: 8px;">
+                <img th:src="@{/assets/images/gallery-1.jpg}" loading="lazy"
+                    style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s;">
+            </div>
+            <div class="approach-card" style="height: 250px; overflow: hidden; border-radius: 8px;">
+                <img th:src="@{/assets/images/gallery-2.jpg}" loading="lazy"
+                    style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s;">
+            </div>
+            <div class="approach-card" style="height: 250px; overflow: hidden; border-radius: 8px;">
+                <img th:src="@{/assets/images/gallery-3.jpg}" loading="lazy"
+                    style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s;">
+            </div>
+            <div class="approach-card" style="height: 250px; overflow: hidden; border-radius: 8px;">
+                <img th:src="@{/assets/images/gallery-4.jpg}" loading="lazy"
+                    style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s;">
+            </div>
+            <div class="approach-card" style="height: 250px; overflow: hidden; border-radius: 8px;">
+                <img th:src="@{/assets/images/gallery-5.jpg}" loading="lazy"
+                    style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s;">
+            </div>
+            <div class="approach-card" style="height: 250px; overflow: hidden; border-radius: 8px;">
+                <img th:src="@{/assets/images/gallery-6.jpg}" loading="lazy"
+                    style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s;">
+            </div>
+            <div class="approach-card" style="height: 250px; overflow: hidden; border-radius: 8px;">
+                <img th:src="@{/assets/images/gallery-7.jpg}" loading="lazy"
+                    style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s;">
+            </div>
+            <div class="approach-card" style="height: 250px; overflow: hidden; border-radius: 8px;">
+                <img th:src="@{/assets/images/gallery-8.jpg}" loading="lazy"
+                    style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s;">
+            </div>
+
+            <!-- Additional Images from Resources -->
+            <div class="approach-card" style="height: 250px; overflow: hidden; border-radius: 8px;">
+                <img th:src="@{/assets/images/IMG-20250830-WA0008-scaled.jpg.jpeg}" loading="lazy"
+                    style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s;">
+            </div>
+            <div class="approach-card" style="height: 250px; overflow: hidden; border-radius: 8px;">
+                <img th:src="@{/assets/images/IMG-20250830-WA0013.jpg.jpeg}" loading="lazy"
+                    style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s;">
+            </div>
+            <div class="approach-card" style="height: 250px; overflow: hidden; border-radius: 8px;">
+                <img th:src="@{/assets/images/IMG-20250903-WA0019-scaled.jpg.jpeg}" loading="lazy"
+                    style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s;">
+            </div>
+            <div class="approach-card" style="height: 250px; overflow: hidden; border-radius: 8px;">
+                <img th:src="@{/assets/images/IMG-20250903-WA0020-scaled.jpg.jpeg}" loading="lazy"
+                    style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s;">
+            </div>
+            <div class="approach-card" style="height: 250px; overflow: hidden; border-radius: 8px;">
+                <img th:src="@{/assets/images/IMG-20250903-WA0027-scaled.jpg.jpeg}" loading="lazy"
+                    style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s;">
+            </div>
+            <div class="approach-card" style="height: 250px; overflow: hidden; border-radius: 8px;">
+                <img th:src="@{/assets/images/IMG-20250903-WA0029-scaled.jpg.jpeg}" loading="lazy"
+                    style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s;">
+            </div>
+            <div class="approach-card" style="height: 250px; overflow: hidden; border-radius: 8px;">
+                <img th:src="@{/assets/images/IMG-20250903-WA0031-scaled.jpg.jpeg}" loading="lazy"
+                    style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s;">
+            </div>
+            <div class="approach-card" style="height: 250px; overflow: hidden; border-radius: 8px;">
+                <img th:src="@{/assets/images/IMG-20250903-WA0067-scaled.jpg.jpeg}" loading="lazy"
+                    style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s;">
+            </div>
+            <div class="approach-card" style="height: 250px; overflow: hidden; border-radius: 8px;">
+                <img th:src="@{/assets/images/IMG-20250903-WA0068-scaled.jpg.jpeg}" loading="lazy"
+                    style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s;">
+            </div>
+            <div class="approach-card" style="height: 250px; overflow: hidden; border-radius: 8px;">
+                <img th:src="@{/assets/images/IMG-20250903-WA0071-scaled.jpg.jpeg}" loading="lazy"
+                    style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s;">
+            </div>
+            <div class="approach-card" style="height: 250px; overflow: hidden; border-radius: 8px;">
+                <img th:src="@{/assets/images/IMG-20250903-WA0073-scaled.jpg.jpeg}" loading="lazy"
+                    style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s;">
+            </div>
+            <div class="approach-card" style="height: 250px; overflow: hidden; border-radius: 8px;">
+                <img th:src="@{/assets/images/IMG-20250903-WA0191-scaled.jpg.jpeg}" loading="lazy"
+                    style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s;">
+            </div>
+            <!-- BATCH 2 ADDITIONS -->
+            <div class="approach-card" style="height: 250px; overflow: hidden; border-radius: 8px;">
+                <img th:src="@{/assets/images/IMG-20250903-WA0014-1024x580.jpg.jpeg}" loading="lazy"
+                    style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s;">
+            </div>
+            <div class="approach-card" style="height: 250px; overflow: hidden; border-radius: 8px;">
+                <img th:src="@{/assets/images/IMG-20250903-WA0016-1024x583.jpg.jpeg}" loading="lazy"
+                    style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s;">
+            </div>
+            <div class="approach-card" style="height: 250px; overflow: hidden; border-radius: 8px;">
+                <img th:src="@{/assets/images/IMG-20250903-WA0017-1024x582.jpg.jpeg}" loading="lazy"
+                    style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s;">
+            </div>
+            <div class="approach-card" style="height: 250px; overflow: hidden; border-radius: 8px;">
+                <img th:src="@{/assets/images/IMG-20250903-WA0021-scaled.jpg.jpeg}" loading="lazy"
+                    style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s;">
+            </div>
+            <div class="approach-card" style="height: 250px; overflow: hidden; border-radius: 8px;">
+                <img th:src="@{/assets/images/IMG-20250903-WA0022-scaled.jpg.jpeg}" loading="lazy"
+                    style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s;">
+            </div>
+            <div class="approach-card" style="height: 250px; overflow: hidden; border-radius: 8px;">
+                <img th:src="@{/assets/images/IMG-20250903-WA0025-scaled.jpg.jpeg}" loading="lazy"
+                    style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s;">
+            </div>
+            <div class="approach-card" style="height: 250px; overflow: hidden; border-radius: 8px;">
+                <img th:src="@{/assets/images/IMG-20250903-WA0026-scaled.jpg.jpeg}" loading="lazy"
+                    style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s;">
+            </div>
+            <div class="approach-card" style="height: 250px; overflow: hidden; border-radius: 8px;">
+                <img th:src="@{/assets/images/IMG-20250903-WA0028-scaled.jpg.jpeg}" loading="lazy"
+                    style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s;">
+            </div>
+            <div class="approach-card" style="height: 250px; overflow: hidden; border-radius: 8px;">
+                <img th:src="@{/assets/images/IMG-20250903-WA0034.jpg.jpeg}" loading="lazy"
+                    style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s;">
+            </div>
+            <div class="approach-card" style="height: 250px; overflow: hidden; border-radius: 8px;">
+                <img th:src="@{/assets/images/IMG-20250903-WA0036.jpg.jpeg}" loading="lazy"
+                    style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s;">
+            </div>
+            <div class="approach-card" style="height: 250px; overflow: hidden; border-radius: 8px;">
+                <img th:src="@{/assets/images/IMG-20250903-WA0038-scaled.jpg.jpeg}" loading="lazy"
+                    style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s;">
+            </div>
+            <div class="approach-card" style="height: 250px; overflow: hidden; border-radius: 8px;">
+                <img th:src="@{/assets/images/IMG-20250903-WA0046.jpg.jpeg}" loading="lazy"
+                    style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s;">
+            </div>
+            <div class="approach-card" style="height: 250px; overflow: hidden; border-radius: 8px;">
+                <img th:src="@{/assets/images/IMG-20250903-WA0048.jpg.jpeg}" loading="lazy"
+                    style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s;">
+            </div>
+            <div class="approach-card" style="height: 250px; overflow: hidden; border-radius: 8px;">
+                <img th:src="@{/assets/images/IMG-20250903-WA0051.jpg.jpeg}" loading="lazy"
+                    style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s;">
+            </div>
+            <div class="approach-card" style="height: 250px; overflow: hidden; border-radius: 8px;">
+                <img th:src="@{/assets/images/IMG-20250903-WA0052-scaled.jpg.jpeg}" loading="lazy"
+                    style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s;">
+            </div>
+            <div class="approach-card" style="height: 250px; overflow: hidden; border-radius: 8px;">
+                <img th:src="@{/assets/images/IMG-20250903-WA0059-scaled.jpg.jpeg}" loading="lazy"
+                    style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s;">
+            </div>
+            <div class="approach-card" style="height: 250px; overflow: hidden; border-radius: 8px;">
+                <img th:src="@{/assets/images/IMG-20250903-WA0075.jpg.jpeg}" loading="lazy"
+                    style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s;">
+            </div>
+            <div class="approach-card" style="height: 250px; overflow: hidden; border-radius: 8px;">
+                <img th:src="@{/assets/images/IMG-20250903-WA0076.jpg.jpeg}" loading="lazy"
+                    style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s;">
+            </div>
+            <div class="approach-card" style="height: 250px; overflow: hidden; border-radius: 8px;">
+                <img th:src="@{/assets/images/IMG-20250903-WA0079.jpg.jpeg}" loading="lazy"
+                    style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s;">
+            </div>
+            <div class="approach-card" style="height: 250px; overflow: hidden; border-radius: 8px;">
+                <img th:src="@{/assets/images/IMG-20250903-WA0084.jpg.jpeg}" loading="lazy"
+                    style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s;">
+            </div>
+            <div class="approach-card" style="height: 250px; overflow: hidden; border-radius: 8px;">
+                <img th:src="@{/assets/images/IMG-20250903-WA0085.jpg.jpeg}" loading="lazy"
+                    style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s;">
+            </div>
+            <div class="approach-card" style="height: 250px; overflow: hidden; border-radius: 8px;">
+                <img th:src="@{/assets/images/IMG-20250903-WA0091.jpg.jpeg}" loading="lazy"
+                    style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s;">
+            </div>
+            <div class="approach-card" style="height: 250px; overflow: hidden; border-radius: 8px;">
+                <img th:src="@{/assets/images/IMG-20250903-WA0095-scaled.jpg.jpeg}" loading="lazy"
+                    style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s;">
+            </div>
+            <div class="approach-card" style="height: 250px; overflow: hidden; border-radius: 8px;">
+                <img th:src="@{/assets/images/IMG-20250903-WA0096-scaled.jpg.jpeg}" loading="lazy"
+                    style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s;">
+            </div>
+            <div class="approach-card" style="height: 250px; overflow: hidden; border-radius: 8px;">
+                <img th:src="@{/assets/images/IMG-20250903-WA0098-scaled.jpg.jpeg}" loading="lazy"
+                    style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s;">
+            </div>
+            <div class="approach-card" style="height: 250px; overflow: hidden; border-radius: 8px;">
+                <img th:src="@{/assets/images/IMG-20250903-WA0101-scaled.jpg.jpeg}" loading="lazy"
+                    style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s;">
+            </div>
+            <div class="approach-card" style="height: 250px; overflow: hidden; border-radius: 8px;">
+                <img th:src="@{/assets/images/IMG-20250903-WA0105.jpg.jpeg}" loading="lazy"
+                    style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s;">
+            </div>
+            <div class="approach-card" style="height: 250px; overflow: hidden; border-radius: 8px;">
+                <img th:src="@{/assets/images/IMG-20250903-WA0106.jpg.jpeg}" loading="lazy"
+                    style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s;">
+            </div>
+            <div class="approach-card" style="height: 250px; overflow: hidden; border-radius: 8px;">
+                <img th:src="@{/assets/images/IMG-20250903-WA0109.jpg.jpeg}" loading="lazy"
+                    style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s;">
+            </div>
+
+        </div>
+    </section>
+
+    <footer th:replace="~{fragments :: footer}"></footer>
+
+    <script th:src="@{/assets/js/script.js}"></script>
+</body>
+
+</html>

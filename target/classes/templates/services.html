@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head th:replace="~{fragments :: head}"></head>
+
+<body>
+
+    <nav th:replace="~{fragments :: navbar}"></nav>
+
+    <section class="hero" style="min-height: 60vh; background: var(--sage-dark); color: white;">
+        <div class="hero-left" style="width: 100%; background: transparent; padding-top: 8rem;">
+            <div class="hero-eyebrow" style="color: var(--sage-light);">Our Treatment Programs</div>
+            <h1 class="hero-title" style="color: white;">Comprehensive <br><em>Care Plans</em></h1>
+            <p class="hero-desc" style="color: rgba(255,255,255,0.8);">Evidence-based therapies tailored to your unique
+                needs.</p>
+        </div>
+    </section>
+
+    <section class="programs reveal" style="background: var(--warm-white); color: var(--charcoal);">
+        <div class="programs-grid">
+            <div class="program-card">
+                <div class="program-icon">
+                    <img th:src="@{/assets/images/alcohol.jpg}" alt="Alcohol Rehab"
+                        style="width: 100%; height: 200px; object-fit: cover; border-radius: 8px; margin-bottom: 1rem;">
+                </div>
+                <h3 style="color: var(--charcoal);">Alcohol De-addiction</h3>
+                <p style="color: var(--muted);">Safe medical detox and counseling to help you stop drinking and stay
+                    sober.</p>
+            </div>
+            <div class="program-card">
+                <div class="program-icon">
+                    <img th:src="@{/assets/images/drug.jpg}" alt="Drug Rehab"
+                        style="width: 100%; height: 200px; object-fit: cover; border-radius: 8px; margin-bottom: 1rem;">
+                </div>
+                <h3 style="color: var(--charcoal);">Drug Rehabilitation</h3>
+                <p style="color: var(--muted);">Treatment for opioids, cannabis, and other substances with 24/7 support.
+                </p>
+            </div>
+            <div class="program-card">
+                <div class="program-icon">
+                    <img th:src="@{/assets/images/cannabis.png}" alt="Cannabis Addiction"
+                        style="width: 100%; height: 200px; object-fit: cover; border-radius: 8px; margin-bottom: 1rem;">
+                </div>
+                <h3 style="color: var(--charcoal);">Cannabis Addiction</h3>
+                <p style="color: var(--muted);">Specialized care for cannabis dependency and related cognitive issues.
+                </p>
+            </div>
+            <div class="program-card">
+                <div class="program-icon">
+                    <img th:src="@{/assets/images/opioids.jpg}" alt="Opioid Addiction"
+                        style="width: 100%; height: 200px; object-fit: cover; border-radius: 8px; margin-bottom: 1rem;">
+                </div>
+                <h3 style="color: var(--charcoal);">Opioid De-addiction</h3>
+                <p style="color: var(--muted);">Medical management for heroin, smack, and painkiller addiction.</p>
+            </div>
+            <div class="program-card">
+                <div class="program-icon">
+                    <img th:src="@{/assets/images/gambling.jpg}" alt="Gambling Addiction"
+                        style="width: 100%; height: 200px; object-fit: cover; border-radius: 8px; margin-bottom: 1rem;">
+                </div>
+                <h3 style="color: var(--charcoal);">Gambling & Behavioral</h3>
+                <p style="color: var(--muted);">Therapy for behavioral compulsions to restore life balance.</p>
+            </div>
+            <div class="program-card">
+                <div class="program-icon">
+                    <img th:src="@{/assets/images/nicotine.jpg}" alt="Nicotine Addiction"
+                        style="width: 100%; height: 200px; object-fit: cover; border-radius: 8px; margin-bottom: 1rem;">
+                </div>
+                <h3 style="color: var(--charcoal);">Nicotine Cessation</h3>
+                <p style="color: var(--muted);">Support to quit smoking and tobacco use permanently.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer th:replace="~{fragments :: footer}"></footer>
+
+    <script th:src="@{/assets/js/script.js}"></script>
+</body>
+
+</html>

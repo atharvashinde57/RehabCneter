@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head th:replace="~{fragments :: head}"></head>
+
+<body>
+
+    <nav th:replace="~{fragments :: navbar}"></nav>
+
+    <!-- HERO SECTION -->
+    <section class="hero-section">
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="hero-eyebrow">About Sanchit Rehab</div>
+                <h1 class="hero-title">
+                    Restoring Hope,<br>
+                    <em>Rebuilding</em> Lives
+                </h1>
+                <p class="hero-desc">
+                    Sanchit Nasha Mukti Kendra is Gwalior's trusted residential rehabilitation centre.
+                </p>
+                <div class="hero-cta">
+                    <a href="#intro" class="btn-primary">Our Story</a>
+                </div>
+            </div>
+        </div>
+        <div class="hero-image-wrapper">
+            <div class="hero-bg" style="background-image: url('/assets/images/gallery-2.jpg');"></div>
+            <div
+                style="position: absolute; top:0; left:0; right:0; bottom:0; background: linear-gradient(135deg, rgba(168,196,162,0.9), rgba(125,155,118,0.8)); opacity: 0.9;">
+            </div>
+            <img th:src="@{/assets/images/gallery-2.jpg}" alt="Facility"
+                style="position: absolute; width: 100%; height: 100%; object-fit: cover; opacity: 0.2; mix-blend-mode: overlay;">
+        </div>
+    </section>
+
+    <!-- INTRO SECTION (Screenshot 1) -->
+    <section class="approach" id="intro" style="background: white; padding-bottom: 2rem;">
+        <div class="approach-visual">
+            <img th:src="@{/assets/images/about.jpg}" alt="Team"
+                style="width: 100%; border-radius: 8px; box-shadow: 0 10px 30px rgba(0,0,0,0.1);">
+        </div>
+        <div class="approach-text">
+            <h2 class="section-title" style="font-size: 2rem; margin-bottom: 1.5rem;">Best Rehabilitation Center in
+                Gwalior, <br><em>Madhya Pradesh</em></h2>
+
+            <p style="font-size: 0.95rem; color: #555; line-height: 1.6; margin-bottom: 1rem;">
+                Sanchit Nasha Mukti Kendra in Gwalior is a trusted residential rehabilitation centre dedicated to
+                helping individuals regain balance, stability, and confidence. As a government-registered and
+                State-certified centre, we offer a peaceful environment, structured routines, and holistic wellness
+                practices. Our trained counsellors, physicians, and yoga instructors provide personalised guidance with
+                care and compassion.
+            </p>
+            <p style="font-size: 0.95rem; color: #555; line-height: 1.6; margin-bottom: 2rem;">
+                With limited capacity, every individual receives focused attention and a supportive atmosphere that
+                feels like home. For anyone seeking a reliable and positive wellness journey, Sanchit Nasha Mukti Kendra
+                stands as a dependable choice in Gwalior and Madhya Pradesh.
+            </p>
+
+            <a href="tel:09238229596" class="btn-primary" style="background: #1a5e1a; border-color: #1a5e1a;">Get Expert
+                Help 09238229596</a>
+        </div>
+    </section>
+
+    <!-- SERVICES SECTION (Screenshot 2) -->
+    <section class="programs" style="background: white; padding: 4rem 0;">
+        <div class="container" style="max-width: 1200px; margin: 0 auto; padding: 0 2rem;">
+            <h2 class="section-title" style="text-align: center; margin-bottom: 3rem;">Our <em>Services</em></h2>
+
+            <div class="services-grid-custom"
+                style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem;">
+
+                <!-- Items -->
+                <div class="service-item">
+                    <img th:src="@{/assets/images/alcohol-addiction.jpg}" alt="Alcohol"
+                        style="width: 100%; height: 200px; object-fit: cover; border-radius: 4px;">
+                    <div
+                        style="background: #2e7d32; color: white; text-align: center; padding: 10px; font-weight: 600; margin-top: 10px; border-radius: 4px;">
+                        Alcohol Addiction Program</div>
+                </div>
+
+                <div class="service-item">
+                    <img th:src="@{/assets/images/drug.jpg}" alt="Drug"
+                        style="width: 100%; height: 200px; object-fit: cover; border-radius: 4px;">
+                    <div
+                        style="background: #2e7d32; color: white; text-align: center; padding: 10px; font-weight: 600; margin-top: 10px; border-radius: 4px;">
+                        Drug Addiction Program</div>
+                </div>
+
+                <div class="service-item">
+                    <img th:src="@{/assets/images/nicotine.jpg}" alt="Nicotine"
+                        style="width: 100%; height: 200px; object-fit: cover; border-radius: 4px;">
+                    <div
+                        style="background: #2e7d32; color: white; text-align: center; padding: 10px; font-weight: 600; margin-top: 10px; border-radius: 4px;">
+                        Nicotine Addiction Program</div>
+                </div>
+
+                <div class="service-item">
+                    <img th:src="@{/assets/images/cannabis.png}" alt="Cannabis"
+                        style="width: 100%; height: 200px; object-fit: cover; border-radius: 4px;">
+                    <div
+                        style="background: #2e7d32; color: white; text-align: center; padding: 10px; font-weight: 600; margin-top: 10px; border-radius: 4px;">
+                        Cannabis Addiction Program</div>
+                </div>
+
+                <div class="service-item">
+                    <img th:src="@{/assets/images/opioids.jpg}" alt="Opioids"
+                        style="width: 100%; height: 200px; object-fit: cover; border-radius: 4px;">
+                    <div
+                        style="background: #2e7d32; color: white; text-align: center; padding: 10px; font-weight: 600; margin-top: 10px; border-radius: 4px;">
+                        Opioids Addiction Program</div>
+                </div>
+
+                <div class="service-item">
+                    <img th:src="@{/assets/images/gambling.jpg}" alt="Gambling"
+                        style="width: 100%; height: 200px; object-fit: cover; border-radius: 4px;">
+                    <div
+                        style="background: #2e7d32; color: white; text-align: center; padding: 10px; font-weight: 600; margin-top: 10px; border-radius: 4px;">
+                        Gambling Addiction Program</div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- FACILITY SECTION (Screenshot 3) -->
+    <section class="facility" style="background: white; padding: 4rem 0;">
+        <div class="container" style="max-width: 1200px; margin: 0 auto; padding: 0 2rem;">
+            <h2 class="section-title" style="text-align: center; margin-bottom: 1rem;">Our <em>Facility</em></h2>
+            <p style="text-align: center; max-width: 800px; margin: 0 auto 3rem auto; color: #666;">
+                At Sanchit Nasha Mukti Kendra Gwalior, we believe that a safe, structured, and comfortable environment
+                plays an important role in the recovery process.
+            </p>
+
+            <div class="facility-grid"
+                style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem;">
+
+                <div class="facility-item">
+                    <img th:src="@{/assets/images/gallery-3.jpg}" alt="Hostel"
+                        style="width: 100%; height: 250px; object-fit: cover; border-radius: 4px;">
+                    <div
+                        style="background: #2e7d32; color: white; text-align: center; padding: 10px; font-weight: 600; margin-top: 10px; border-radius: 4px;">
+                        Residential Accommodation</div>
+                </div>
+
+                <div class="facility-item">
+                    <img th:src="@{/assets/images/gallery-4.jpg}" alt="Classroom"
+                        style="width: 100%; height: 250px; object-fit: cover; border-radius: 4px;">
+                    <div
+                        style="background: #2e7d32; color: white; text-align: center; padding: 10px; font-weight: 600; margin-top: 10px; border-radius: 4px;">
+                        24/7 Supervised Care</div>
+                </div>
+
+                <div class="facility-item">
+                    <img th:src="@{/assets/images/gallery-5.jpg}" alt="Checkup"
+                        style="width: 100%; height: 250px; object-fit: cover; border-radius: 4px;">
+                    <div
+                        style="background: #2e7d32; color: white; text-align: center; padding: 10px; font-weight: 600; margin-top: 10px; border-radius: 4px;">
+                        Medical Support & Monitoring</div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT CARDS SECTION (Screenshot 4) -->
+    <section class="contact-info-section" style="background: black; padding: 4rem 0;">
+        <div class="container"
+            style="max-width: 1100px; margin: 0 auto; padding: 0 2rem; display: flex; gap: 2rem; flex-wrap: wrap;">
+
+            <!-- Card 1: Logo & Vision -->
+            <div class="info-card"
+                style="background: white; flex: 1; padding: 3rem; border-radius: 8px; display: flex; flex-direction: column; align-items: center; text-align: center; min-width: 300px;">
+                <!-- Placeholder for Lotus Logo if not available, using text styled similarly -->
+                <div style="font-size: 3rem; margin-bottom: 1rem;">🪷</div>
+                <p style="font-size: 0.9rem; line-height: 1.6; margin-bottom: 2rem; color: #333;">
+                    Sanchit Wellness Centre is a government-registered wellness centre in India, offering expert care,
+                    certified staff, and holistic programs focused on healing, transformation, and lasting well-being.
+                </p>
+                <h4
+                    style="font-family: 'Cormorant Garamond', serif; font-size: 1.2rem; font-weight: 700; margin-bottom: 1rem;">
+                    Working Time</h4>
+                <ul style="list-style: none; padding: 0; font-size: 0.9rem; color: #444;">
+                    <li style="margin-bottom: 0.5rem;"><strong>Mon - Fri:</strong> 9.00 am – 5.00 pm</li>
+                    <li><strong>Saturday:</strong> 10.00 am – 6.00 pm</li>
+                    <li style="margin-top: 0.5rem;"><strong>Sunday Closed</strong></li>
+                </ul>
+            </div>
+
+            <!-- Card 2: Contact Numbers -->
+            <div class="info-card"
+                style="background: white; flex: 1; padding: 3rem; border-radius: 8px; text-align: center; min-width: 300px;">
+                <h3
+                    style="font-family: 'Cormorant Garamond', serif; font-size: 1.8rem; font-weight: 700; margin-bottom: 2rem; border-bottom: 1px solid #ddd; padding-bottom: 1rem; display: inline-block;">
+                    Contact Numbers</h3>
+                <ul style="list-style: none; padding: 0; text-align: left; display: inline-block; font-size: 1rem;">
+                    <li style="margin-bottom: 0.8rem; display: flex; gap: 1rem;">
+                        <span style="color: #666;">1.</span> <a href="tel:7828991573"
+                            style="text-decoration: none; color: #007bff; font-weight: 600;">7828991573</a>
+                    </li>
+                    <li style="margin-bottom: 0.8rem; display: flex; gap: 1rem;">
+                        <span style="color: #666;">2.</span> <a href="tel:8840591853"
+                            style="text-decoration: none; color: #007bff; font-weight: 600;">8840591853</a>
+                    </li>
+                    <li style="margin-bottom: 0.8rem; display: flex; gap: 1rem;">
+                        <span style="color: #666;">3.</span> <a href="tel:9755870972"
+                            style="text-decoration: none; color: #007bff; font-weight: 600;">9755870972</a>
+                    </li>
+                    <li style="margin-bottom: 0.8rem; display: flex; gap: 1rem;">
+                        <span style="color: #666;">4.</span> <a href="tel:7489257221"
+                            style="text-decoration: none; color: #007bff; font-weight: 600;">7489257221</a>
+                    </li>
+                    <li style="margin-bottom: 0.8rem; display: flex; gap: 1rem;">
+                        <span style="color: #666;">5.</span> <a href="tel:7007079654"
+                            style="text-decoration: none; color: #007bff; font-weight: 600;">7007079654</a>
+                    </li>
+                    <li style="margin-bottom: 0.8rem; display: flex; gap: 1rem;">
+                        <span style="color: #666;">6.</span> <a href="tel:9238229596"
+                            style="text-decoration: none; color: #007bff; font-weight: 600;">9238229596</a>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer th:replace="~{fragments :: footer}"></footer>
+
+    <script th:src="@{/assets/js/script.js}"></script>
+</body>
+
+</html>

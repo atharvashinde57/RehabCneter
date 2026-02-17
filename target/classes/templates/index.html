@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head th:replace="~{fragments :: head}"></head>
+
+<body>
+
+    <!-- NAVBAR FRAGMENT -->
+    <div th:replace="~{fragments :: navbar}"></div>
+
+    <section class="hero-section">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    Begin your<br>
+                    <em>journey</em> back to<br>
+                    wholeness
+                </h1>
+                <p class="hero-desc">
+                    Government approved. Evidence-based treatment rooted in compassion. We walk alongside you
+                    through every
+                    step of healing — mind, body, and spirit.
+                </p>
+                <div class="hero-cta">
+                    <a href="#contact" class="btn-primary">Start Your Recovery</a>
+                    <a href="#programs" class="btn-secondary">View Programs</a>
+                </div>
+            </div>
+        </div>
+        <div class="hero-image-wrapper">
+            <div class="hero-bg"></div>
+            <div class="hero-shape"></div>
+            <!-- Botanical decoration -->
+            <svg class="hero-botanical" viewBox="0 0 300 500" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                    d="M150 500 C150 500 148 400 145 350 C142 300 130 280 110 260 C90 240 60 235 50 210 C40 185 55 160 80 145 C105 130 140 135 150 100"
+                    stroke="#4E6E4A" stroke-width="2.5" stroke-linecap="round" />
+                <path d="M150 350 C130 310 100 300 70 290 C50 283 30 270 20 250" stroke="#4E6E4A" stroke-width="1.5"
+                    stroke-linecap="round" />
+                <path d="M148 300 C168 270 180 250 200 230 C215 215 235 210 250 195" stroke="#4E6E4A" stroke-width="1.5"
+                    stroke-linecap="round" />
+                <ellipse cx="80" cy="145" rx="30" ry="18" transform="rotate(-30 80 145)" stroke="#4E6E4A"
+                    stroke-width="1.5" fill="none" />
+                <ellipse cx="200" cy="230" rx="28" ry="16" transform="rotate(20 200 230)" stroke="#4E6E4A"
+                    stroke-width="1.5" fill="none" />
+                <ellipse cx="50" cy="210" rx="22" ry="14" transform="rotate(-45 50 210)" stroke="#4E6E4A"
+                    stroke-width="1.5" fill="none" />
+                <path d="M150 200 C160 165 175 145 195 125 C210 110 230 100 240 80" stroke="#4E6E4A" stroke-width="1.5"
+                    stroke-linecap="round" />
+                <ellipse cx="240" cy="80" rx="24" ry="14" transform="rotate(15 240 80)" stroke="#4E6E4A"
+                    stroke-width="1.5" fill="none" />
+            </svg>
+            <div class="hero-stats">
+                <div class="stat">
+                    <div class="stat-num">95%</div>
+                    <div class="stat-label">Program completion</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-num">10+</div>
+                    <div class="stat-label">Years of healing</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- MARQUEE -->
+    <div class="marquee-band">
+        <div class="marquee-inner">
+            <span>Alcohol Addiction</span>
+            <span>Drug Rehabilitation</span>
+            <span>Dual Diagnosis Care</span>
+            <span>Family Therapy</span>
+            <span>Yoga & Meditation</span>
+            <span>Holistic Wellness</span>
+            <span>Detoxification</span>
+            <span>Residential Treatment</span>
+            <span>Alcohol Addiction</span>
+            <span>Drug Rehabilitation</span>
+            <span>Dual Diagnosis Care</span>
+            <span>Family Therapy</span>
+            <span>Yoga & Meditation</span>
+            <span>Holistic Wellness</span>
+            <span>Detoxification</span>
+            <span>Residential Treatment</span>
+        </div>
+    </div>
+
+    <!-- APPROACH -->
+    <section class="approach reveal" id="approach">
+        <div class="approach-text">
+            <div class="section-label">About Us</div>
+            <h2 class="section-title">Best Rehabilitation Center in <em>Gwalior</em></h2>
+            <p>Sanchit Nasha Mukti Kendra is Gwalior's trusted residential rehabilitation centre, dedicated to helping
+                individuals regain balance, stability, and confidence.</p>
+            <p>As a government-registered and State-certified centre, we offer a peaceful environment, structured
+                routines, and holistic wellness practices. Our trained counsellors, physicians, and yoga instructors
+                provide personalised guidance with care and compassion.</p>
+            <div class="approach-pillars">
+                <div class="pillar">
+                    <div class="pillar-icon">🏥</div>
+                    <h4>Medical Care</h4>
+                    <p>24/7 supervision by qualified professionals.</p>
+                </div>
+                <div class="pillar">
+                    <div class="pillar-icon">🌿</div>
+                    <h4>Holistic Wellness</h4>
+                    <p>Yoga, meditation, and structured therapy.</p>
+                </div>
+            </div>
+            <a th:href="@{/about}" class="btn-primary" style="margin-top: 2rem;">Read Our Full Story</a>
+        </div>
+        <div class="approach-visual">
+            <div class="image-stack">
+                <img th:src="@{/assets/images/about.jpg}" alt="Counseling Session" class="img-1">
+                <img th:src="@{/assets/images/gallery-1.jpg}" alt="Rehab Facility" class="img-2">
+            </div>
+            <!-- Decorative shape -->
+            <div class="visual-shape"></div>
+        </div>
+
+    </section>
+
+    <!-- PROGRAMS -->
+    <section class="programs reveal" id="programs">
+        <div class="section-label">What We Offer</div>
+        <h2 class="section-title">Programs designed for <em>every stage</em> of recovery</h2>
+        <p class="programs-subtitle">From medically supervised detox to long-term aftercare, our continuum of
+            care
+            supports you no matter where you are in your journey.</p>
+        <div class="programs-grid">
+            <div class="program-card">
+                <div class="program-num">01</div>
+                <div class="program-icon">🏥</div>
+                <h3>Medical Detox</h3>
+                <p>Safe, comfortable withdrawal management under medical supervision with evidence-based
+                    protocols.</p>
+                <span class="program-tag">Inpatient</span>
+            </div>
+            <div class="program-card">
+                <div class="program-num">02</div>
+                <div class="program-icon">🏡</div>
+                <h3>Alcohol Rehab</h3>
+                <p>Specialized programs to help you break free from alcohol dependency safely and effectively.
+                </p>
+                <span class="program-tag">Specialized Care</span>
+            </div>
+            <div class="program-card">
+                <div class="program-num">03</div>
+                <div class="program-icon">💊</div>
+                <h3>Drug De-addiction</h3>
+                <p>Expert care for opioid, cannabis, and other substance use disorders.</p>
+                <span class="program-tag">Comprehensive</span>
+            </div>
+            <div class="program-card">
+                <div class="program-num">04</div>
+                <div class="program-icon">🧠</div>
+                <h3>Mental Health</h3>
+                <p>Addressing underlying issues like anxiety and depression alongside addiction.</p>
+                <span class="program-tag">Dual Diagnosis</span>
+            </div>
+            <div class="program-card">
+                <div class="program-num">05</div>
+                <div class="program-icon">🎲</div>
+                <h3>Behavioral Addiction</h3>
+                <p>Treatment for gambling and other behavioral compulsions.</p>
+                <span class="program-tag">Therapy</span>
+            </div>
+            <div class="program-card">
+                <div class="program-num">06</div>
+                <div class="program-icon">🌱</div>
+                <h3>Aftercare</h3>
+                <p>Lifelong support through our alumni network and continuing care coordination.</p>
+                <span class="program-tag">Ongoing Support</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- TESTIMONIALS -->
+    <section class="testimonials reveal">
+        <div class="testimonials-header">
+            <div>
+                <div class="section-label">Stories of Hope</div>
+                <h2 class="section-title">Voices from our<br><em>community</em></h2>
+            </div>
+            <div class="scroll-arrows">
+                <button class="scroll-btn" onclick="scrollTestimonials(-1)">←</button>
+                <button class="scroll-btn" onclick="scrollTestimonials(1)">→</button>
+            </div>
+        </div>
+        <div class="testimonials-scroll" id="testimonials-scroll">
+            <div class="testimonial-card">
+                <div class="t-stars">★★★★★</div>
+                <div class="t-quote">"Sanchit Rehab gave me my life back. The team genuinely cares about each
+                    patient as
+                    an individual, not just a diagnosis."</div>
+                <div class="t-author">
+                    <div class="t-avatar">S</div>
+                    <div>
+                        <div class="t-name">Sandeep S.</div>
+                        <div class="t-meta">2 years in recovery</div>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial-card">
+                <div class="t-stars">★★★★★</div>
+                <div class="t-quote">"The environment is so peaceful. Yoga and meditation helped me find calm
+                    without
+                    substances."</div>
+                <div class="t-author">
+                    <div class="t-avatar">R</div>
+                    <div>
+                        <div class="t-name">Rahul K.</div>
+                        <div class="t-meta">18 months in recovery</div>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial-card">
+                <div class="t-stars">★★★★★</div>
+                <div class="t-quote">"Best Nasha Mukti Kendra in Gwalior. The staff is very supportive and
+                    professional."</div>
+                <div class="t-author">
+                    <div class="t-avatar">A</div>
+                    <div>
+                        <div class="t-name">Amit J.</div>
+                        <div class="t-meta">Alumni</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- TEAM -->
+    <section class="team reveal" id="team">
+        <div class="section-label">Who We Are</div>
+        <h2 class="section-title">Meet our <em>dedicated</em> team</h2>
+        <p class="team-subtitle">Our clinicians, counselors, and wellness experts bring years of experience and
+            deep
+            personal commitment to your healing.</p>
+        <div class="team-grid">
+            <div class="team-card">
+                <div class="team-photo">
+                    <div class="team-photo-bg"
+                        style="background: linear-gradient(135deg, #D4E8E4 0%, #A8C4A2 60%, #7D9B76 100%); height: 100%;">
+                    </div>
+                </div>
+                <div class="team-name">Dr. Sharma</div>
+                <div class="team-role">Medical Director</div>
+            </div>
+            <div class="team-card">
+                <div class="team-photo">
+                    <div class="team-photo-bg"
+                        style="background: linear-gradient(135deg, #E8D5B0 0%, #C9A96E 60%, #B07D63 100%); height: 100%;">
+                    </div>
+                </div>
+                <div class="team-name">Dr. Verma</div>
+                <div class="team-role">Psychiatrist</div>
+            </div>
+            <div class="team-card">
+                <div class="team-photo">
+                    <div class="team-photo-bg"
+                        style="background: linear-gradient(135deg, #F7F3EC 0%, #D4E8E4 60%, #7D9B76 100%); height: 100%;">
+                    </div>
+                </div>
+                <div class="team-name">Expert Counselors</div>
+                <div class="team-role">Addiction Specialists</div>
+            </div>
+            <div class="team-card">
+                <div class="team-photo">
+                    <div class="team-photo-bg"
+                        style="background: linear-gradient(135deg, #C9A96E 0%, #7D9B76 50%, #4E6E4A 100%); height: 100%;">
+                    </div>
+                </div>
+                <div class="team-name">Wellness Team</div>
+                <div class="team-role">Yoga & Meditation</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PROCESS -->
+    <section class="process reveal" id="process">
+        <div class="process-header">
+            <div>
+                <div class="section-label">Getting Started</div>
+                <h2 class="section-title">Your path to healing<br>begins with a single<br><em>step</em></h2>
+            </div>
+            <p>We've made starting treatment as simple and stress-free as possible. From your first call to your
+                first
+                day of treatment, our admissions team guides you through every detail.</p>
+        </div>
+        <div class="process-steps">
+            <div class="process-step">
+                <div class="step-circle">1</div>
+                <h4>Free Consultation</h4>
+                <p>Call us at +91 97553 52136 any time. Completely confidential.</p>
+            </div>
+            <div class="process-step">
+                <div class="step-circle">2</div>
+                <h4>Assessment</h4>
+                <p>A brief assessment helps us understand your needs and design a personalized plan.</p>
+            </div>
+            <div class="process-step">
+                <div class="step-circle">3</div>
+                <h4>Admission</h4>
+                <p>We handle the paperwork so you can focus entirely on getting better.</p>
+            </div>
+            <div class="process-step">
+                <div class="step-circle">4</div>
+                <h4>Begin Treatment</h4>
+                <p>Arrive at our Gwalior facility. Our team greets you warmly.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA BAND -->
+    <div class="cta-band reveal" id="contact">
+        <h2>You deserve a life<br>of <em>freedom and joy</em>.<br>Let us help you find it.</h2>
+        <div class="cta-right">
+            <p>Our team is available 24 hours a day, 7 days a week. Every call is confidential. Recovery is
+                possible —
+                and it starts today.</p>
+            <div class="cta-buttons">
+                <a href="tel:+919755352136" class="btn-light">📞 Call +91 97553 52136</a>
+                <a href="https://wa.me/919755352136" class="btn-ghost">WhatsApp Us →</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- NAVBAR FRAGMENT -->
+
+    <!-- FOOTER FRAGMENT -->
+    <footer th:replace="~{fragments :: footer}"></footer>
+
+    <script>
+        // Navbar scroll effect
+        const navbar = document.getElementById('navbar');
+        window.addEventListener('scroll', () => {
+            navbar.classList.toggle('scrolled', window.scrollY > 60);
+        });
+
+        // Scroll reveal
+        const reveals = document.querySelectorAll('.reveal');
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, { threshold: 0.1 });
+        reveals.forEach(el => observer.observe(el));
+
+        // Testimonials scroll
+        function scrollTestimonials(dir) {
+            const el = document.getElementById('testimonials-scroll');
+            el.scrollBy({ left: dir * 420, behavior: 'smooth' });
+        }
+    </script>
+</body>
+
+</html>

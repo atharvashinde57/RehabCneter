@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head th:replace="~{fragments :: head}"></head>
+
+<body>
+
+    <nav th:replace="~{fragments :: navbar}"></nav>
+
+    <!-- HERO SECTION -->
+    <section class="hero"
+        style="min-height: 40vh; background: var(--charcoal); color: white; display: flex; align-items: center;">
+        <div class="container" style="text-align: center; padding-top: 4rem;">
+            <h1 class="hero-title" style="color: white; font-size: 3.5rem;">Contact Us</h1>
+            <p class="hero-desc" style="color: rgba(255,255,255,0.8); max-width: 600px; margin: 0 auto;">
+                We are here to help you on your journey to recovery. Reach out to us anytime.
+            </p>
+        </div>
+    </section>
+
+    <!-- INTRO TEXT & IMAGE REMINDER - PROFESSIONAL SECTION -->
+    <!-- Removed 'reveal' class to ensure visibility -->
+    <section class="approach" style="padding: 4rem 0; background: #fff;">
+        <div class="approach-text" style="padding-right: 2rem;">
+            <div class="section-label">We Are Here To Help</div>
+            <h2 class="section-title">Your Path to Recovery Starts with a <br><em>Conversation</em></h2>
+            <p style="font-size: 1.05rem; line-height: 1.8; color: #555; margin-bottom: 1.5rem;">
+                Taking the first step towards recovery requires immense courage, and we honor that bravery. At Sanchit
+                Rehab, we understand the complexities of addiction and mental health challenges. Our team is dedicated
+                to providing a safe, non-judgmental space where you can find clarity and hope.
+            </p>
+            <p style="font-size: 1.05rem; line-height: 1.8; color: #555; margin-bottom: 2rem;">
+                Whether you are seeking help for yourself or a loved one, our compassionate admission counselors are
+                available 24/7 to guide you through the process with complete confidentiality. We are committed to
+                listening to your story and tailoring a recovery plan that meets your unique needs. Reach out to us
+                today—because a healthier, brighter future is possible, and we are here to walk that path with you.
+            </p>
+            <div class="approach-pillars">
+                <div class="pillar">
+                    <div class="pillar-icon">🤝</div>
+                    <h4>Confidential Support</h4>
+                    <p>Your privacy is our priority.</p>
+                </div>
+                <div class="pillar">
+                    <div class="pillar-icon">📞</div>
+                    <h4>24/7 Availability</h4>
+                    <p>We are always here to listen.</p>
+                </div>
+            </div>
+        </div>
+        <div class="approach-visual">
+            <!-- Using a suitable image from existing resources as generation failed -->
+            <img th:src="@{/assets/images/about.jpg}" alt="Supportive Counseling"
+                style="width: 100%; height: 100%; object-fit: cover; border-radius: 12px; box-shadow: 0 10px 30px rgba(0,0,0,0.1);">
+        </div>
+    </section>
+
+    <!-- CONTACT CARDS SECTION (Screenshot Layout) -->
+    <section class="contact-info-section" style="background: black; padding: 4rem 0;">
+        <div class="container"
+            style="max-width: 1200px; margin: 0 auto; padding: 0 2rem; display: flex; gap: 2rem; flex-wrap: wrap; justify-content: center;">
+
+            <!-- Card 1: Logo -->
+            <div class="info-card"
+                style="background: white; flex: 1; min-width: 300px; height: 350px; border-radius: 12px; display: flex; align-items: center; justify-content: center; padding: 2rem;">
+                <img th:src="@{/assets/images/cropped-sanchit-rehab-logo.png}" alt="Sanchit Rehab Logo"
+                    style="max-width: 80%; height: auto;">
+            </div>
+
+            <!-- Card 2: Info & Working Time -->
+            <div class="info-card"
+                style="background: white; flex: 1; min-width: 300px; min-height: 350px; border-radius: 12px; padding: 2.5rem; display: flex; flex-direction: column; align-items: center; text-align: center;">
+                <p style="font-size: 0.95rem; line-height: 1.6; margin-bottom: 2rem; color: #333; font-weight: 500;">
+                    Sanchit Wellness Centre is a government-registered wellness centre in India, offering expert care,
+                    certified staff, and holistic programs focused on healing, transformation, and lasting well-being.
+                </p>
+                <h4
+                    style="font-family: 'Cormorant Garamond', serif; font-size: 1.3rem; font-weight: 700; margin-bottom: 1rem; color: #000;">
+                    Working Time</h4>
+                <ul
+                    style="list-style: none; padding: 0; font-size: 0.95rem; color: #444; text-align: left; display: inline-block;">
+                    <li style="margin-bottom: 0.5rem;"><strong>Mon – Fri:</strong> 9.00 am – 5.00 pm</li>
+                    <li style="margin-bottom: 0.5rem;"><strong>Saturday:</strong> 10.00 am – 6.00 pm</li>
+                    <li style="margin-top: 0.5rem;"><strong>Sunday Closed</strong></li>
+                </ul>
+            </div>
+
+            <!-- Card 3: Contact Numbers -->
+            <div class="info-card"
+                style="background: white; flex: 1; min-width: 300px; min-height: 350px; border-radius: 12px; padding: 2.5rem; text-align: center;">
+                <h3
+                    style="font-family: 'Cormorant Garamond', serif; font-size: 1.8rem; font-weight: 700; margin-bottom: 2rem; color: #000;">
+                    Contact Numbers</h3>
+                <ul style="list-style: none; padding: 0; text-align: left; display: inline-block; font-size: 1rem;">
+                    <li style="margin-bottom: 0.8rem; display: flex; gap: 1rem;">
+                        <span style="color: #666; width: 20px;">1.</span> <a href="tel:7828991573"
+                            style="text-decoration: none; color: #007bff; font-weight: 600;">7828991573</a>
+                    </li>
+                    <li style="margin-bottom: 0.8rem; display: flex; gap: 1rem;">
+                        <span style="color: #666; width: 20px;">2.</span> <a href="tel:8840591853"
+                            style="text-decoration: none; color: #007bff; font-weight: 600;">8840591853</a>
+                    </li>
+                    <li style="margin-bottom: 0.8rem; display: flex; gap: 1rem;">
+                        <span style="color: #666; width: 20px;">3.</span> <a href="tel:9755870972"
+                            style="text-decoration: none; color: #007bff; font-weight: 600;">9755870972</a>
+                    </li>
+                    <li style="margin-bottom: 0.8rem; display: flex; gap: 1rem;">
+                        <span style="color: #666; width: 20px;">4.</span> <a href="tel:7489257221"
+                            style="text-decoration: none; color: #007bff; font-weight: 600;">7489257221</a>
+                    </li>
+                    <li style="margin-bottom: 0.8rem; display: flex; gap: 1rem;">
+                        <span style="color: #666; width: 20px;">5.</span> <a href="tel:7007079654"
+                            style="text-decoration: none; color: #007bff; font-weight: 600;">7007079654</a>
+                    </li>
+                    <li style="margin-bottom: 0.8rem; display: flex; gap: 1rem;">
+                        <span style="color: #666; width: 20px;">6.</span> <a href="tel:9238229596"
+                            style="text-decoration: none; color: #007bff; font-weight: 600;">9238229596</a>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Map Section (Optional but good for contact page) -->
+    <section class="map-section" style="height: 400px; width: 100%;">
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3579.626895318186!2d78.1692133150293!3d26.20875398343588!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3976c5d1794e7711%3A0x6291931304523676!2sGwalior%2C%20Madhya%20Pradesh!5e0!3m2!1sen!2sin!4v1620000000000!5m2!1sen!2sin"
+            width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </section>
+
+    <footer th:replace="~{fragments :: footer}"></footer>
+
+    <script>
+        // Make navbar text white for this page
+        document.addEventListener('DOMContentLoaded', function () {
+            const navbar = document.getElementById('navbar');
+            if (navbar) {
+                navbar.classList.add('nav-dark-bg');
+            }
+        });
+    </script>
+
+    <script th:src="@{/assets/js/script.js}"></script>
+</body>
+
+</html>

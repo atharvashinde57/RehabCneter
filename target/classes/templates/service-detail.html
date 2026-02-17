@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head th:replace="~{fragments :: head}"></head>
+
+<body>
+
+    <nav th:replace="~{fragments :: navbar}"></nav>
+
+    <!-- DYNAMIC HERO SECTION -->
+    <section class="hero" style="min-height: 60vh; position: relative; display: flex; align-items: center; overflow: hidden;">
+        <!-- Background Image Overlay -->
+        <div class="hero-bg" th:style="'position: absolute; inset: 0; background: url(' + @{${heroImage}} + ') center/cover no-repeat; filter: brightness(0.4); z-index: -1;'"></div>
+        
+        <div class="container" style="text-align: center; color: white; padding-top: 4rem;">
+            <div class="hero-eyebrow" style="color: var(--gold); margin-bottom: 1rem;">Specialized Treatment</div>
+            <h1 class="hero-title" th:text="${pageTitle}" style="color: white; font-size: 3.5rem; margin-bottom: 1.5rem;">Service Name</h1>
+            <p class="hero-desc" style="color: rgba(255,255,255,0.9); max-width: 700px; margin: 0 auto; font-size: 1.1rem;">
+                Recovering from addiction is a journey, and you don't have to walk it alone. Sanchit Rehab provides government-approved, holistic care.
+            </p>
+            <a th:href="@{/contact}" class="btn btn-primary" style="margin-top: 2rem;">Get Help Now</a>
+        </div>
+    </section>
+
+    <!-- CONTENT SECTION -->
+    <section class="approach" style="padding: 5rem 0; background: #fff;">
+        <div class="container" style="max-width: 900px; margin: 0 auto; padding: 0 2rem;">
+            
+            <div class="section-label" style="text-align: center; width: 100%; margin-bottom: 1rem;">Overview</div>
+            <h2 class="section-title" style="text-align: center; margin-bottom: 3rem;">About the <br><em>Program</em></h2>
+
+            <!-- Dynamic Content Injection -->
+            <div class="service-content" th:utext="${pageContent}" style="font-size: 1.1rem; line-height: 1.8; color: #444;">
+                <!-- Content from Controller will be placed here -->
+            </div>
+
+            <!-- Common Features for all Services -->
+            <div class="approach-pillars" style="margin-top: 4rem;">
+                <div class="pillar">
+                    <div class="pillar-icon">👨‍⚕️</div>
+                    <h4>Expert Team</h4>
+                    <p>Psychiatrists & Counselors</p>
+                </div>
+                <div class="pillar">
+                    <div class="pillar-icon">🌿</div>
+                    <h4>Holistic Care</h4>
+                    <p>Yoga & Meditation</p>
+                </div>
+                <div class="pillar">
+                    <div class="pillar-icon">🏡</div>
+                    <h4>Residential</h4>
+                    <p>Safe Environment</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <footer th:replace="~{fragments :: footer}"></footer>
+
+    <script>
+       // Ensure navbar is visible on these pages
+        document.addEventListener('DOMContentLoaded', function() {
+            // Check if we are not at top (optional) but for hero pages usually we want transparent then solid?
+            // Actually reusing standard navbar logic is fine, but let's ensure text is readable if hero is dark.
+            // Our standard navbar is transparent then white on scroll. 
+            // The hero text is white, so transparent navbar (white text) works.
+            // But we need to make sure the 'nav-dark-bg' class isn't permanently on unless we want it.
+            // For this design with dark hero image, standard behavior (Transparent -> White) is best.
+        });
+    </script>
+    <script th:src="@{/assets/js/script.js}"></script>
+</body>
+</html>
